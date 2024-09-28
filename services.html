@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragon Academy - Services</title>
+    <link rel="stylesheet" type="text/css" href="output.css">
+
+    <link rel="stylesheet" href="services.css">
+
+    <!-- google fonts link / -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- --------------------------- -->
+
+    <!-- ts particle cdn is here  -->
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+
+    <!-- --------------------------- -->
+
+
+    <!-- cdn font icons font awosome  -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- --------------------------- -->
+
+</head>
+
+<body class="bg-black">
+
+    <div id="particles-js"></div>
+
+    <!-- nav bar is here -------------------------------------------------------------------- -->
+    <nav class="sticky top-0 bg- z-30 backdrop-blur-lg">
+        <div class="h-[100px] flex flex-row justify-between   w-full content-center px-[50px] overflow-x-hidden ">
+
+
+            <div class="pl-[10px] flex justify-between items-center w-full overflow-y-hidden">
+                <div>
+                    <img src="da-removebg-preview.png" alt=""
+                        class="md:scale-110 md:h-[100px] h-[82px] logo_dragon ">
+                </div>
+                <div class="md:hidden flex ">
+                    <i class="fa-solid fa-bars text-4xl menu_btn " style="color:#fff2d0;"></i>
+                </div>
+            </div>
+            <div class=" md:flex flex-col  hidden md:justify-center  items-center relative md:z-0 z-30">
+                <ul
+                    class="flex font-primary flex-col gap-8 md:flex-row text-[#fff2d0] relative px-[40px] text-[40px] font-semibold nav_links ">
+                    <li class=" nav_links_1  "> <a href="index.html"
+                            class="text-[20px] text-tert font-bold hover:text-secondary hover:no-underline">Home </a>
+                    </li>
+                    <li class=" nav_links_2 "> <a href="about.html"
+                            class="text-[20px] text-tert font-bold hover:text-secondary hover:no-underline"> About </a>
+                    </li>
+                    <li class=" nav_links_3  after_underline"> <a href="services.html"
+                            class="text-[20px] text-tert font-bold hover:text-secondary hover:no-underline"> services
+                        </a> </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class=" menu_nav hidden  fixed w-full  bg-tert/90  z-40 ">
+        <div class="flex justify-center h-[100vh]">
+
+            <ul
+                class="flex font-primary flex-col gap-8 md:flex-row  text-black   font-bold relative px-[40px] text-[40px] z-20 overflow-x-hidden  py-16">
+                <li class="  responsive_menu font-black  text-[20px] z-30"> <a href="index.html"
+                        class="text-[20px] text-black font-bold hover:text-secondary hover:no-underline">Home </a> </li>
+                <li class=" responsive_menu font-black  text-[20px] z-30"> <a href="about.html"
+                        class="text-[20px] text-black font-bold hover:text-secondary hover:no-underline"> About </a>
+                </li>
+                <li class=" responsive_menu font-black  text-[20px] z-30"> <a href="services.html"
+                        class="text-[20px] text-black font-bold hover:text-secondary hover:no-underline"> services </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- --------------------------- -->
+
+    <!-- main page of website-------------------------------------------------------------- -->
+    <main class="w-full">
+        <!-- hero section is here  -->
+
+        <div class="hero w-full  bg-no-repeat bg-center bg-contain bg-transparent">
+            <div class=" w-full h-[180px] flex justify-evenly pt-[10px] hero__ele overflow-y-hidden overflow-x-hidden">
+                <div id="left" class="md:w-[28%] lg:flex justify-center items-center hidden">
+                    <img id="left_img" class="h-[120px] cursor-pointer" src="d07.png" alt="">
+                </div>
+                <div id="middle" class="md:w-[28%] flex justify-center items-center flex-col cursor-pointer ">
+                    <img id="main_img" class="h-[150px] z-10 md:max-w-max" src="d06.png" class="" alt="">
+                </div>
+                <div id="right" class="md:w-[30%] lg:flex   justify-center items-center hidden ">
+                    <img id="right_img" class="h-[120px] cursor-pointer " src="d09.png" alt="">
+                </div>
+
+            </div>
+        </div>
+
+        <!-- services page code will be here            ---------------------------------------------------------------- -->
+
+        <header class="aboutushead bg-tert/10  flex flex-col text-tert items-center justify-center py-[20px] w-full">
+            <p class="md:text-5xl text-4xl text-center font-bold  md:font-bold font-display">services</p>
+        </header>
+
+
+        <div class="h-auto z-20 relative flex justify-center items-center bg-secondary/50 pb-12 font-secondary ">
+
+            <div class="px-[16px] overflow-x-hidden ">
+
+                <div>
+                    <div class=" flex flex-col gap-16 ">
+                        <div class="  px-[30px] w md:pt-10">
+
+                            <!-- <h2 class="text-4xl ml-4 font-extrabold text-black"> Services</h2> -->
+                            <div class="w-full  mt-[40px] flex flex-col  md:flex-row overflow-y-hidden">
+
+                                <div
+                                    class="md:w-[40%] flex flex-col  justify-center items-center md:items-start p-[30px]">
+                                    <img src="1.jpeg" class="h-[210px] rounded-lg">
+                                    <h2 class="text-lg md:text-start text-center text-tert/90 font-secondary ">The
+                                        Dragon Academy is a prestigious institution
+                                        dedicated to the study,
+                                        training,
+                                        and
+                                        care of dragons. The academy offers a range of services to ensure the well-being
+                                        and
+                                        development of these majestic creatures.
+                                    </h2>
+                                </div>
+
+
+                                <div class="text-tert text-lg font-secondary">
+
+
+                                    <p> 1. Dragon Training: Expert trainers teach dragons to obey commands, perform
+                                        tasks,
+                                        and behave in various environments.</p>
+
+                                    <p>2. Dragon Healthcare: Veterinary specialists provide medical care, vaccinations,
+                                        and
+                                        nutritional guidance.</p>
+
+                                    <p>3. Dragon Research: Scientists conduct studies on dragon behavior, physiology,
+                                        and
+                                        habitats.</p>
+
+                                    <p> 4. Dragon Communication: Specialists help humans understand and interpret dragon
+                                        language.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="  px-[30px] w md:pt-10">
+
+                            <h2 class="text-3xl ml-4 font-extrabold text-black"> Training Objectives:</h2>
+                            <div class="w-full  mt-[40px] flex flex-col  md:flex-row overflow-y-hidden">
+
+                                <div
+                                    class="md:w-[40%] flex flex-col  justify-center items-center md:items-start p-[30px]">
+                                    <img src="1.1.jpeg" class="h-[210px] rounded-lg">
+                                    <h2 class="text-lg md:text-start text-center text-tert/90 font-secondary ">The
+                                        Dragon Training program at the Dragon Academy focuses
+                                        on
+                                        developing a strong bond between dragons and their human handlers. Expert
+                                        trainers
+                                        use
+                                        positive reinforcement techniques, emphasizing trust, respect, and clear
+                                        communication.
+                                    </h2>
+                                </div>
+
+
+                                <div class="text-tert text-lg font-secondary">
+
+
+                                    <p>1. Obedience: Teach dragons to respond to commands and instructions.</p>
+                                    <p>2. Behavior Modification: Address undesirable behaviors, such as aggression or
+                                        fear-based reactions.</p>
+                                    <p>3. Socialization: Acclimate dragons to various environments, people, and
+                                        situations.
+                                    </p>
+                                    <p>4. Performance Enhancement: Improve dragon agility, speed, and endurance.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="  px-[30px] w md:pt-10">
+
+                            <h2 class="md:text-4xl text-3xl  ml-4 font-extrabold text-black"> Healthcare:</h2>
+                            <div class="w-full  mt-[40px] flex flex-col  md:flex-row overflow-y-hidden">
+
+                                <div
+                                    class="md:w-[40%] flex flex-col  justify-center items-center md:items-start p-[30px]">
+                                    <img src="3.1.jpeg" class="h-[210px] rounded-lg">
+                                    <h2 class="text-lg md:text-start text-center text-tert/90 font-secondary ">The
+                                        Dragon Academy's Healthcare program ensures the optimal
+                                        health and well-being of dragons through comprehensive medical care, preventive
+                                        measures, and cutting-edge research.
+                                    </h2>
+                                </div>
+
+
+                                <div class="text-tert text-lg font-secondary">
+
+
+                                    <p>1. Routine Check-ups: Regular health examinations, vaccinations, and parasite
+                                        control.</p>
+                                    <p>2. Nutrition Counseling: Personalized dietary plans.</p>
+                                    <p>3. Mental Health Program: Supporting emotional well-being.</p>
+                                    <p>4. Dental Health Program: Preventing oral diseases.</p>
+                                    <p>5. Performance Enhancement: Improve dragon agility, speed, and endurance.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+                        <div class="  px-[30px] w md:pt-10">
+
+                            <h2 class="md:text-4xl text-3xl  ml-4 font-extrabold text-black"> Research:</h2>
+                            <div class="w-full  mt-[40px] flex flex-col  md:flex-row overflow-y-hidden">
+
+                                <div
+                                    class="md:w-[40%] flex flex-col  justify-center items-center md:items-start p-[30px]">
+                                    <img src="4.jpeg"  class="h-[210px] rounded-lg">
+                                    <h2 class="text-lg md:text-start text-center text-tert/90 font-secondary ">Scientists conduct studies on dragon behavior, physiology,
+                                        and
+                                        habitats.
+                                    </h2>
+                                </div>
+
+
+                                <div class="text-tert text-lg font-secondary">
+
+
+                                    <p>1. Studying dragon anatomy and physiology.</p>
+                                    <p>2. Developing new treatments and medications.</p>
+                                    <p>3. Investigating dragon diseases and prevention.</p>
+                                    <p>4. The Role of Dragons in Human History and Culture.</p>
+                                    <p>5. Conservation Efforts for Endangered Dragon Species.</p>
+                                    <p>6. Dragon-Human Communication: A Study of Vocalizations and Body Language.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- services code will be above these lines ------------------------------------------------------ -->
+
+
+        <div id="particles-js"></div>
+    </main>
+    <!-- footer tag is here all links are here  -->
+    <footer class="p-[16px] z-20 relative w-full foot_line bg-black border-t-2 border-secondary">
+        <div class="md:h-[400px] w-full rounded-xl  ">
+            <div class="flex flex-col md:flex-row items-center justify-evenly md:items-start">
+                <div class="w-[300px] md:h-[300px] mb-16 flex flex-col justify-start items-center">
+                    <img src="da-removebg-preview.png" alt="" class="h-[200px] relative z-20">
+                    <p class="font-primary z-30 text-tert text-center font-semibold text-sm  mt-[-50px]">Training &
+                        research
+                        <br>
+                        oraganisation
+                    </p>
+                </div>
+                <div class="w-[300px]  md:h-[300px]  justify-center md:pt-10 mb-10 mt-0">
+                    <h1 class="text-2xl md:text-3xl text-white   font-medium text-center mb-8 font-primary">LINKS </h1>
+                    <div>
+                        <ul class="text-tert  font-primary text-[1px] text-center">
+                            <li class="pb-2 text-lg"> <a class="text-tert hover:text-secondary hover:no-underline"
+                                    href="#">Home
+                                </a> </li>
+                            <li class="pb-2 text-lg"> <a class="text-tert hover:text-secondary hover:no-underline"
+                                    href="about.html"> About </a> </li>
+                            <li class="pb-2 text-lg"> <a class="text-tert hover:text-secondary hover:no-underline"
+                                    href="Dragons.html">Services </a> </li>
+                            <!-- <li> <a href="training.html">Training </a> </li>
+                            <li> <a href="event.html">Events </a> </li> -->
+                        </ul>
+                    </div>
+                </div>
+                <div class="w-[300px]  h-[300px] justify-center md:pt-10 mb-10 mt-0">
+                    <h1 class="md:text-3xl text-2xl font-medium text-white text-center mb-8 font-primary">Social media
+                    </h1>
+                    <div>
+                        <ul class="text-[1px] text-start ml-16 text-tert font-primary">
+                            <li class="pb-4"> <a href=""
+                                    class=" text-[20px] text-tert hover:text-secondary hover:no-underline text-lg pb-10">
+                                    <i class="fa-brands fa-youtube text-lg md:text-xl md:ml-0 ml-6 mr-4"></i> youtube
+                                </a>
+                            </li>
+                            <li class="pb-4"> <a href=""
+                                    class=" text-[20px] text-tert hover:text-secondary hover:no-underline text-lg pb-10">
+                                    <i class="fa-brands  text-lg md:text-xl md:ml-0 ml-6 mr-4  fa-facebook"></i>
+                                    facebook </a> </li>
+                            <li class="pb-4"> <a href=""
+                                    class=" text-[20px] hover:text-secondary hover:no-underline text-lg pb-10 text-tert ">
+                                    <i class="fa-solid  text-tert text-lg md:text-xl md:ml-0 ml-6 mr-4 fa-x"></i>
+                                    twitter</a>
+                            </li>
+                            <li class="pb-4"> <a href=""
+                                    class=" text-[20px] text-tert hover:text-secondary hover:no-underline text-lg pb-10">
+                                    <i class="fa-brands  text-lg md:text-xl md:ml-0 ml-6 mr-4  fa-instagram"></i>
+                                    instagram</a> </li>
+                            <li class="pb-4"> <a href=""
+                                    class=" text-[20px] text-tert hover:text-secondary hover:no-underline text-lg pb-10">
+                                    <i
+                                        class="fa-solid   text-lg md:text-xl md:ml-0 ml-6 mr-4 fa-phone"></i>9876543210</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="text-center text-lg  pb-[30px] md:pb-0">
+                <span class=" text-center text-lg font-primary text-tert"> <span class="text-sm pb-4">&#169; </span> all
+                    rights reserved</span>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- ------------------------------------------------------------------------------ -->
+    <!-- all script tags are here  -->
+    <script src="scrollreveal.min.js"></script>
+    <script src="main.js"></script>
+    <script src="menubtn.js"></script>
+</body>
+
+</html>

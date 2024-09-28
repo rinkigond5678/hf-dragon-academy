@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragon Academy - About</title>
+    <link rel="stylesheet" type="text/css" href="output.css">
+
+    <!-- google fonts link / -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- --------------------------- -->
+
+    <!-- ts particle cdn is here  -->
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+
+    <!-- --------------------------- -->
+
+
+    <!-- cdn font icons font awosome  -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- --------------------------- -->
+
+</head>
+
+<body class="bg-black">
+
+    <div id="particles-js"></div>
+
+    <!-- nav bar is here  -->
+
+    <nav class="sticky top-0 bg- z-30 backdrop-blur-lg">
+        <div class="h-[100px] flex flex-row justify-between   w-full content-center px-[50px] overflow-x-hidden ">
+
+
+            <div class="pl-[10px] flex justify-between items-center w-full overflow-y-hidden">
+                <div>
+                    <img src="da-removebg-preview.png" alt="" z
+                        class="md:scale-110 sm:h-[100px] h-[82px] logo_dragon ">
+                </div>
+                <div class="md:hidden flex ">
+                    <i class="fa-solid fa-bars text-4xl menu_btn " style="color:#fff2d0;"></i>
+                </div>
+            </div>
+            <div class=" md:flex flex-col  hidden sm:justify-center  items-center relative md:z-0 z-30">
+                <ul
+                    class="flex font-primary flex-col gap-8 md:flex-row text-[#fff2d0] relative px-[40px] text-[40px] font-semibold nav_links ">
+                    <li class=" nav_links_1  "> <a href="index.html">Home </a> </li>
+                    <li class=" nav_links_2 after_underline"> <a href="about.html"> About </a> </li>
+                    <li class=" nav_links_3  "> <a href="services.html"> services </a> </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class=" menu_nav hidden  fixed w-full  bg-tert/90  z-40 ">
+        <div class="flex justify-center h-[100vh]">
+
+            <ul
+                class="flex font-primary flex-col gap-8 md:flex-row  text-black   font-bold relative px-[40px] text-[40px] z-20 overflow-x-hidden  py-16">
+                <li class="  responsive_menu font-black  text-[20px] z-30"> <a href="index.html">Home </a> </li>
+                <li class=" responsive_menu font-black after_underline text-[20px] z-30"> <a href="about.html"> About
+                    </a> </li>
+                <li class=" responsive_menu font-black  text-[20px] z-30"> <a href="services.html"> services </a> </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- --------------------------- -->
+
+    <!-- main page of website-------------------------------------------------------------- -->
+    <main class="w-full">
+        <!-- hero section is here  -->
+
+        <div class="hero w-full  bg-no-repeat bg-center bg-contain bg-transparent">
+            <div class=" w-full h-[180px] flex justify-evenly pt-[10px] hero__ele overflow-y-hidden overflow-x-hidden">
+                <div id="left" class="sm:w-[28%] lg:flex justify-center items-center hidden">
+                    <img id="left_img" class="h-[120px] cursor-pointer" src="d07.png" alt="">
+                </div>
+                <div id="middle" class="sm:w-[28%] flex justify-center items-center flex-col cursor-pointer ">
+                    <img id="main_img" class="h-[150px] z-10 sm:max-w-max" src="d06.png" class="" alt="">
+                </div>
+                <div id="right" class="sm:w-[30%] lg:flex   justify-center items-center hidden ">
+                    <img id="right_img" class="h-[120px] cursor-pointer " src="d09.png" alt="">
+                </div>
+
+            </div>
+        </div>
+
+        <div class="w-full z-20 relative">
+
+            <div class=" z-20 relative">
+                <!--about us-->
+                <div id="" class="flex flex-col gap-6 py-12 mt-16  lg-mt-32 ">
+
+
+                    <header
+                        class="aboutushead bg-secondary/90  flex flex-col text-black items-center justify-center py-[20px] w-full">
+                        <p class="md:text-5xl text-4xl text-center font-bold  sm:font-bold font-display">About Us</p>
+                    </header>
+
+                    <div id="step1"
+                        class="rounded-xl border ml-auto mr-auto left-2/4 right-2/4 px-8 py-12 flex  flex-col w-[80%]">
+
+                        <div class="pt-4 sm:pt-12 flex md:flex-row flex-col-reverse justify-center items">
+
+                            <div class=" flex flex-col justify-between sm:justify-center gap-4 text-center ">
+
+                                <h3 class="sm:text-5xl text-2xl abouttext font-display mt-10">Welcome to Dragon Academy,
+                                    where passion meets
+                                    excellence.
+                                </h3>
+                                <p
+                                    class="sm:text-xl text-sm  bg-black/70 text-tert/70  font-light font-body  abouttext md:px-20">
+                                    We believe in creating a dynamic and
+                                    supportive learning
+                                    environment. We offer a diverse range of programs and courses tailored to meet the
+                                    individual needs of
+                                    our trainers, ensuring they are well prepared for the challenges of the future.</p>
+                            </div>
+
+                            <img class=" w-auto  rounded custom-shadow about_img" src="a.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Our Mission Section -->
+                <div id="steps"
+                    class="about-container z-20 relative overflow-x-hidden about-content px-6 pt-12 max-w-7xl mt-16 mx-auto lg:px-8 lg-mt-32">
+                    <h1 class="text-3xl about-content font-bold title_aboutsection  font-display mb-14">Our Mission</h1>
+                    <div id="step1" class="rounded-xl border px-8 py-12 flex flex-col lg:flex-row mb-28">
+                        <div class="flex  justify-evenly flex-col md:flex-row gap-6">
+                            <div class="flex justify-center items-center">
+                                <img class="object-cover about_img rounded" src="aboutd1.png" alt="">
+                            </div>
+                            <p
+                                class="sm:text-xl sm:w-[70%] sm:mt-16 text-[14px] text-center abouttext font-medium bg-black/70 text-tert/70 rounded-lgstroke-black sm:p-10 font-secondary">
+                                At Dragon Academy, our mission is to provide world-class training that equips
+                                individuals to become certified Dragon trainers. We focus on hands-on learning,
+                                empowering students with the skills and confidence to master Dragon technology. Beyond
+                                training, we host global events to showcase Dragon’s potential, fostering a vibrant
+                                community of innovators and collaborators. Through our programs, we aim to shape the
+                                future of industries by turning passionate learners into tech leaders who can drive
+                                meaningful change.</p>
+                        </div>
+                    </div>
+
+
+                    <!-- our vision section here  -->
+
+
+
+                    <h1 class="text-3xl about-content  font-bold title_aboutsection  font-display mb-14">Our Vission
+                    </h1>
+                    <div id="step1" class="rounded-xl border px-8 mb-28 py-12 flex flex-col lg:flex-row">
+                        <div class="flex  justify-evenly flex-col md:flex-row gap-6">
+                            <div class="flex justify-center items-center">
+                                <img class="object-cover about_img rounded" src="aboutd2.png" alt="">
+                            </div>
+                            <p class=" sm:w-[70%] sm:mt-16 sm:text-xl text-[14px] text-center abouttext font-medium bg-black/70 text-tert/70 rounded-lg stroke-black
+                                    sm:p-10 font-secondary">Dragon Academy is dedicated to transforming individuals
+                                into skilled Dragon trainers, capable of mastering Dragon technology to drive
+                                innovation. We build a global community of learners and leaders, ready to solve
+                                real-world challenges and shape the future of technology. Through hands-on training and
+                                international events showcasing Dragon’s world, we empower individuals to unlock their
+                                potential and make a lasting impact across industries.
+
+                                .</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div id="steps"
+                    class="about-container z-20 relative overflow-x-hidden about-content px-6  max-w-7xl mx-auto lg:px-8 lg-mt-32 mb-8">
+
+                    <!-- Why choose dragon academy -->
+
+                    <h1 class="text-3xl about-content font-bold   title_aboutsection  font-display mb-14">Why Choose
+                        Dragon Academy</h1>
+                    <div id="step1" class="rounded-xl border px-8 py-12 flex flex-col lg:flex-row">
+                        <div class=" flex flex-col md:flex-row gap-6 w-full overflow-y-hidden">
+                            <div class="flex justify-center items-center">
+                                <img class="object-cover about_img rounded" src="aboutd3.png" alt="">
+                            </div>
+                            <div class="text-xl  w-full font-medium sm:w-[70%] sm:mt-10 bg-black/70 text-tert/70 stroke-black
+                            py-10 px-[10px] font-secondary flex flex-col justify-center items-center abouttext ">
+                                <ul class="list-disc pl-5">
+                                    <li class="   
+                                        text-lg md:text-[24px] md:mb-4 mb-2 font-light font-body">Expert faculty for
+                                        trainers</li>
+                                    <li class="md:text-[24px] md:mb-4 mb-2 text-lg font-light font-body">A diverse and
+                                        inclusive community</li>
+                                    <li class="md:text-[24px] md:mb-4 mb-2 text-lg font-light font-body">Innovative
+                                        teaching methods</li>
+                                    <li class="md:text-[24px] md:mb-4 mb-2 text-lg font-light font-body">Global Events
+                                    </li>
+                                    <li class="md:text-[24px] md:mb-4 mb-2 text-lg font-light font-body">Hands-On
+                                        Learning</li>
+                                    <li class="md:text-[24px] md:mb-4 mb-2 text-lg font-light font-body">Community
+                                        Support</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- get testimonials  ----------  -->
+
+            <div class="testimonials px-default z-20 relative pb-16  bg-secondary/15">
+                <div class="z-20 relative  pt-8 sm:px-[40px]">
+                    <div class="flex justify-center items-center flex-col overflow-x-hidden">
+                        <h2 class="text-[28px] text-white nav_links_1 px-[60px] text-center sub_head font-bold">
+                            Our Customers
+                        </h2>
+
+                    </div>
+                    <div class="testimonials_main mt-8 mb-8 ">
+
+                        <div
+                            class="w-full bg- flex md:flex-row flex-wrap flex-col justify-evenly items-center gap-4 p-4 testi_parent text-[16px]  overflow-x-hidden overflow-y-hidden">
+
+
+                            <!-- <div
+                            class="bg-white/20 h-[350px] w-[350px] rounded-3xl flex flex-col md:justify-evenly justify-center items-center testi_child user${index}">
+                            <img src=${img_url} alt="" m class="h-[130px] w-[130px] rounded-full testi_dp">
+                            <h1 class="text-[28px] testi_name"> ${name} </h1>
+
+
+                            <a href="mailto: ${mail}" class="text-center text-secondary testi_mail text-wrap"> ${mail}
+                            </a>
+                        </div> -->
+                            <!-- here code comes from js  -->
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- --------------------------- -->
+
+
+    </main>
+
+    <div id="particles-js"></div>
+
+
+
+    <!-- footer tag is here all links are here  -->
+
+
+
+    <footer class="p-4 z-20 relative w-full foot_line bg-black border-t-2 border-secondary">
+        <div class="md:h-[400px] w-full rounded-xl  ">
+            <div class="flex flex-col md:flex-row items-center justify-evenly md:items-start">
+                <div class="w-[300px] sm:h-[300px] mb-16 flex flex-col justify-start items-center">
+                    <img src="da-removebg-preview.png" alt="" class="h-[200px] relative z-20">
+                    <p class="font-primary z-30 text-tert text-center font-semibold text-sm  mt-[-50px]">Training &
+                        research
+                        <br>
+                        oraganisation
+                    </p>
+                </div>
+                <div class="w-[300px]  sm:h-[300px]  mb-16 justify-center sm:mt-10 mt-0">
+                    <h1 class="text-2xl sm:text-3xl text-white   font-medium text-center mb-8">LINKS </h1>
+                    <div>
+                        <ul class="text-tert  font-primary text-[1px] text-center">
+                            <li class="pb-2 text-lg"> <a class="text-ld" href="#">Home </a> </li>
+                            <li class="pb-2 text-lg"> <a class="text-ld" href="about.html"> About </a> </li>
+                            <li class="pb-2 text-lg"> <a class="text-ld" href="Dragons.html">services </a> </li>
+                            <!-- <li> <a href="training.html">Training </a> </li>
+                            <li> <a href="event.html">Events </a> </li> -->
+                        </ul>
+                    </div>
+                </div>
+                <div class="w-[300px]  h-[300px] justify-center sm:mt-10 mt-0">
+                    <h1 class="sm:text-3xl text-2xl font-medium text-white text-center mb-8">Social media </h1>
+                    <div>
+                        <ul class="text-[1px] text-start ml-16 text-tert font-primary">
+                            <li class="pb-4"> <a href="" class=" text-lg pb-10"> <i
+                                        class="fa-brands fa-youtube text-lg sm:text-xl sm:ml-0 ml-6 mr-4"></i> youtube
+                                </a>
+                            </li>
+                            <li class="pb-4"> <a href="" class=" text-lg pb-10"> <i
+                                        class="fa-brands  text-lg sm:text-xl sm:ml-0 ml-6 mr-4  fa-facebook"></i>
+                                    facebook </a> </li>
+                            <li class="pb-4"> <a href="" class=" text-lg pb-10"> <i
+                                        class="fa-solid   text-lg sm:text-xl sm:ml-0 ml-6 mr-4 fa-x"></i> twitter</a>
+                            </li>
+                            <li class="pb-4"> <a href="" class=" text-lg pb-10"> <i
+                                        class="fa-brands  text-lg sm:text-xl sm:ml-0 ml-6 mr-4  fa-instagram"></i>
+                                    instagram</a> </li>
+                            <li class="pb-4"> <a href="" class=" text-lg pb-10"> <i
+                                        class="fa-solid   text-lg sm:text-xl sm:ml-0 ml-6 mr-4 fa-phone"></i>9876543210</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center text-lg  pb-[30px] sm:pb-0">
+                <span class=" text-center text-lg font-primary text-tert"> <span class="text-sm pb-4">&#169; </span> all
+                    rights reserved</span>
+
+            </div>
+        </div>
+    </footer> <!-- ------------------------------------------------------------------------------ -->
+    <!-- all script tags are here  -->
+    <script src="scrollreveal.min.js"></script>
+    <script src="main.js"></script>
+    <script src="menubtn.js"></script>
+    <script src="user.js"></script>
+</body>
+
+</html>

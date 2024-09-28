@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    @apply font-secondary text-[22px] text-primary bg-bg;
+}
+
+a {
+    @apply text-[20px] hover:text-secondary transition-all duration-300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @apply font-primary text-tert font-medium;
+}
+
+.h1 {
+    @apply text-[64px] lg:text-[84px] font-medium leading-none;
+}
+
+
+.h2 {
+    @apply text-[50px] font-medium leading-tight;
+}
+
+.h3 {
+    @apply text-[25px] font-medium;
+}
+  /* ---- particles.js container ---- */
+  
+  #particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+
+  /* nav links underline custom code  */
+
+  .after_underline::after{
+    
+        content: "";
+        width: 110%;
+        height: .06em; 
+        background: #FA7070;
+        position: absolute;
+        bottom: 4px;
+        left: 0;
+        
+      }
+      /* custom scroll bar  */
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #fff2d0; 
+    border-radius: 25px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #FA7070; 
+  }
+
+
+
+
+
+ 
+  
+
+
+  
